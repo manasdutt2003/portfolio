@@ -2,109 +2,422 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
 <title>Manas Dutt | AI Engineer</title>
-<link rel="stylesheet" href="index.css">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:Arial,sans-serif;background:#08090c;color:#f5f5f5;line-height:1.6}
+a{text-decoration:none;color:inherit}
+span,label,header small,article small{color:#a78bfa}
+
+nav{
+height:70px;padding:0 7%;position:fixed;top:0;width:100%;
+display:flex;align-items:center;justify-content:space-between;
+background:#08090cee;backdrop-filter:blur(12px);
+border-bottom:1px solid #ffffff12;z-index:10
+}
+nav b{font-size:23px}
+nav div{display:flex;gap:25px;color:#aaa;font-size:14px}
+nav a:hover{color:#fff}
+
+header,section{max-width:1100px;margin:auto;padding:110px 5%}
+
+header{
+min-height:100vh;display:flex;flex-direction:column;
+justify-content:center
+}
+
+header h1{
+font-size:clamp(45px,7vw,75px);
+line-height:1.05;max-width:850px;margin:20px 0;
+letter-spacing:-3px
+}
+
+header p{
+max-width:650px;color:#999;font-size:17px;
+margin-bottom:30px
+}
+
+.btn{
+display:inline-block;background:#fff;color:#08090c;
+padding:12px 18px;border-radius:7px;margin:5px;
+font-size:14px;font-weight:bold
+}
+
+.btn.alt{
+background:transparent;color:#fff;
+border:1px solid #ffffff22
+}
+
+section{border-top:1px solid #ffffff0d}
+
+label{
+font-size:11px;letter-spacing:2px
+}
+
+h2{
+font-size:clamp(35px,5vw,55px);
+margin:15px 0 40px;line-height:1.1
+}
+
+section>p{
+color:#999;max-width:700px;font-size:16px
+}
+
+.skills,.projects{
+display:grid;grid-template-columns:repeat(2,1fr);gap:18px
+}
+
+.skills article,.projects article{
+background:#0e1015;border:1px solid #ffffff10;
+border-radius:14px;padding:25px;transition:.25s
+}
+
+.skills article:hover,.projects article:hover{
+transform:translateY(-5px);
+border-color:#a78bfa55
+}
+
+h3{font-size:21px;margin:10px 0}
+
+.skills p,.projects p{
+color:#999;font-size:14px
+}
+
+.projects article{
+min-height:280px;
+display:flex;
+flex-direction:column
+}
+
+.projects article em{
+font-style:normal;color:#aaa;
+font-size:11px;margin:20px 0
+}
+
+.projects article a{
+margin-top:auto;color:#a78bfa;font-size:13px
+}
+
+.projects article small{
+letter-spacing:1px
+}
+
+.contact{
+text-align:left
+}
+
+footer{
+text-align:center;padding:30px;color:#777;
+border-top:1px solid #ffffff10;font-size:12px
+}
+
+@media(max-width:700px){
+nav div{display:none}
+nav{padding:0 6%}
+header,section{padding:90px 6%}
+header h1{font-size:45px;letter-spacing:-2px}
+.skills,.projects{grid-template-columns:1fr}
+}
+</style>
 </head>
+
 <body>
 
+<!-- NAVIGATION -->
 <nav>
-  <b>Manas<span>.</span></b>
-  <div><a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#contact">Contact</a></div>
-  <a href="https://github.com/manasdutt2003" target="_blank">GitHub ↗</a>
+<b>Manas<span>.</span></b>
+
+<div>
+<a href="#about">About</a>
+<a href="#skills">Skills</a>
+<a href="#projects">Projects</a>
+<a href="#contact">Contact</a>
+</div>
+
+<a href="https://github.com/manasdutt2003" target="_blank">GitHub ↗</a>
 </nav>
 
+
+<!-- HERO -->
 <header>
-  <small>AI ENGINEER • ML • GENAI • FULL STACK</small>
-  <h1>Building intelligent <span>systems</span> that solve real problems.</h1>
-  <p>I'm Manas Dutt, a Computer Science graduate focused on Machine Learning, Deep Learning, Generative AI, RAG and full-stack AI applications.</p>
-  <a class="btn" href="#projects">View Projects →</a>
-  <a class="btn alt" href="https://github.com/manasdutt2003" target="_blank">GitHub ↗</a>
+<small>AI ENGINEER • ML • GENAI • FULL STACK</small>
+
+<h1>
+Building intelligent <span>systems</span>
+that solve real problems.
+</h1>
+
+<p>
+I'm Manas Dutt, a Computer Science graduate focused on
+Machine Learning, Deep Learning, Generative AI, RAG and
+full-stack AI applications.
+</p>
+
+<div>
+<a class="btn" href="#projects">View Projects →</a>
+<a class="btn alt" href="https://github.com/manasdutt2003" target="_blank">
+GitHub ↗
+</a>
+</div>
 </header>
 
+
+<!-- ABOUT -->
 <section id="about">
-  <label>01 / ABOUT</label>
-  <h2>Engineer focused on <span>intelligent systems.</span></h2>
-  <p>I build practical AI systems across machine learning, deep learning, computer vision, Generative AI, RAG and application development.</p>
+
+<label>01 / ABOUT</label>
+
+<h2>
+Engineer focused on <span>intelligent systems.</span>
+</h2>
+
+<p>
+I build practical AI systems across machine learning,
+deep learning, computer vision, Generative AI, RAG and
+application development. I enjoy taking an idea from
+data and model development all the way to a usable
+application.
+</p>
+
 </section>
 
+
+<!-- SKILLS -->
 <section id="skills">
-  <label>02 / SKILLS</label>
-  <h2>Technical <span>Toolkit</span></h2>
-  <div class="skills">
-    <article><h3>AI / ML</h3><p>Python · PyTorch · TensorFlow · Scikit-learn · Pandas · NumPy</p></article>
-    <article><h3>GenAI</h3><p>LLMs · RAG · LangChain · Embeddings · Vector DB · Gemini · Llama</p></article>
-    <article><h3>Development</h3><p>FastAPI · React · Node.js · Express · JavaScript · HTML · CSS</p></article>
-    <article><h3>Data & Cloud</h3><p>MySQL · MongoDB · Cassandra · AWS · CUDA · Git · GitHub</p></article>
-  </div>
+
+<label>02 / SKILLS</label>
+
+<h2>
+Technical <span>Toolkit</span>
+</h2>
+
+<div class="skills">
+
+<article>
+<h3>AI / Machine Learning</h3>
+<p>
+Python · PyTorch · TensorFlow · Scikit-learn ·
+Pandas · NumPy · Keras
+</p>
+</article>
+
+<article>
+<h3>Generative AI</h3>
+<p>
+LLMs · RAG · LangChain · Embeddings · Vector DB ·
+Gemini · Llama
+</p>
+</article>
+
+<article>
+<h3>Development</h3>
+<p>
+FastAPI · React · Node.js · Express · JavaScript ·
+HTML · CSS · Tailwind
+</p>
+</article>
+
+<article>
+<h3>Data & Cloud</h3>
+<p>
+MySQL · MongoDB · Cassandra · AWS · CUDA ·
+Git · GitHub · SQL
+</p>
+</article>
+
+</div>
 </section>
 
+
+<!-- PROJECTS -->
 <section id="projects">
-  <label>03 / PROJECTS</label>
-  <h2>Selected <span>Work</span></h2>
 
-  <div class="projects">
+<label>03 / PROJECTS</label>
 
-    <article>
-      <small>COMPUTER VISION</small>
-      <h3>Shadow Detection & Removal</h3>
-      <p>Deep learning system for detecting and removing shadows using PyTorch, attention mechanisms and ResNeXt.</p>
-      <em>PyTorch · ResNeXt · Computer Vision</em>
-      <a href="https://github.com/manasdutt2003/Shadow_detection_and_removal" target="_blank">GitHub →</a>
-    </article>
+<h2>
+Selected <span>Work</span>
+</h2>
 
-    <article>
-      <small>MACHINE LEARNING</small>
-      <h3>Learning Style Identification</h3>
-      <p>AI-powered learning style prediction using KAN, TabNet, SS-VAE, CatBoost and Gemini.</p>
-      <em>CatBoost · TabNet · Gemini · Streamlit</em>
-      <a href="https://learning-style-identification-using-semi-supervised-learning-6.streamlit.app/" target="_blank">Live Demo →</a>
-    </article>
+<div class="projects">
 
-    <article>
-      <small>GENERATIVE AI</small>
-      <h3>AI Q&A Chatbot</h3>
-      <p>LLM-based question answering application demonstrating modern Generative AI development.</p>
-      <em>Python · LangChain · LLM · RAG</em>
-      <a href="https://github.com/manasdutt2003/Q-A_ChatBot" target="_blank">GitHub →</a>
-    </article>
 
-    <article>
-      <small>RAG</small>
-      <h3>PDF Query AI</h3>
-      <p>Document question-answering system using retrieval, embeddings, LangChain and Cassandra.</p>
-      <em>LangChain · Cassandra · RAG</em>
-      <a href="https://github.com/manasdutt2003/PDF_Query_using_LangChain_and_Cassandra" target="_blank">GitHub →</a>
-    </article>
+<article>
 
-    <article>
-      <small>DEEP LEARNING</small>
-      <h3>Deepfake Detection</h3>
-      <p>Computer vision project focused on detecting manipulated media using deep learning.</p>
-      <em>Python · PyTorch · ResNet</em>
-      <a href="https://github.com/manasdutt2003/Deepfake-Detection-Model" target="_blank">GitHub →</a>
-    </article>
+<small>COMPUTER VISION</small>
 
-    <article>
-      <small>AI APPLICATION</small>
-      <h3>Invoice Extractor</h3>
-      <p>AI application for extracting structured information from invoice documents.</p>
-      <em>Python · AI · Document Processing</em>
-      <a href="https://github.com/manasdutt2003/InvoiceExtractor" target="_blank">GitHub →</a>
-    </article>
+<h3>Shadow Detection & Removal</h3>
 
-  </div>
+<p>
+Deep learning system for detecting and removing
+shadows using PyTorch, attention mechanisms and
+ResNeXt.
+</p>
+
+<em>
+PyTorch · ResNeXt · Computer Vision
+</em>
+
+<a href="https://github.com/manasdutt2003/Shadow_detection_and_removal"
+target="_blank">
+GitHub →
+</a>
+
+</article>
+
+
+<article>
+
+<small>MACHINE LEARNING</small>
+
+<h3>Learning Style Identification</h3>
+
+<p>
+AI-powered learning style prediction using KAN,
+TabNet, SS-VAE, CatBoost and Gemini.
+</p>
+
+<em>
+CatBoost · TabNet · Gemini · Streamlit
+</em>
+
+<a href="https://learning-style-identification-using-semi-supervised-learning-6.streamlit.app/"
+target="_blank">
+Live Demo →
+</a>
+
+</article>
+
+
+<article>
+
+<small>GENERATIVE AI</small>
+
+<h3>AI Q&A Chatbot</h3>
+
+<p>
+LLM-based question answering application demonstrating
+modern Generative AI development.
+</p>
+
+<em>
+Python · LangChain · LLM · RAG
+</em>
+
+<a href="https://github.com/manasdutt2003/Q-A_ChatBot"
+target="_blank">
+GitHub →
+</a>
+
+</article>
+
+
+<article>
+
+<small>RAG</small>
+
+<h3>PDF Query AI</h3>
+
+<p>
+Document question-answering system using retrieval,
+embeddings, LangChain and Cassandra.
+</p>
+
+<em>
+LangChain · Cassandra · RAG
+</em>
+
+<a href="https://github.com/manasdutt2003/PDF_Query_using_LangChain_and_Cassandra"
+target="_blank">
+GitHub →
+</a>
+
+</article>
+
+
+<article>
+
+<small>DEEP LEARNING</small>
+
+<h3>Deepfake Detection</h3>
+
+<p>
+Computer vision project focused on detecting
+manipulated media using deep learning.
+</p>
+
+<em>
+Python · PyTorch · ResNet · Computer Vision
+</em>
+
+<a href="https://github.com/manasdutt2003/Deepfake-Detection-Model"
+target="_blank">
+GitHub →
+</a>
+
+</article>
+
+
+<article>
+
+<small>AI APPLICATION</small>
+
+<h3>Invoice Extractor</h3>
+
+<p>
+AI application for extracting structured information
+from invoice documents.
+</p>
+
+<em>
+Python · AI · Document Processing
+</em>
+
+<a href="https://github.com/manasdutt2003/InvoiceExtractor"
+target="_blank">
+GitHub →
+</a>
+
+</article>
+
+</div>
 </section>
 
-<section id="contact">
-  <label>04 / CONTACT</label>
-  <h2>Let's build something <span>intelligent.</span></h2>
-  <p>Interested in AI Engineering, Machine Learning, Generative AI and Software Engineering opportunities.</p>
-  <a class="btn" href="mailto:manasdutt2003@gmail.com">Email Me →</a>
-  <a class="btn alt" href="https://www.linkedin.com/in/manas-dutt-1bb42228b/" target="_blank">LinkedIn ↗</a>
+
+<!-- CONTACT -->
+<section id="contact" class="contact">
+
+<label>04 / CONTACT</label>
+
+<h2>
+Let's build something <span>intelligent.</span>
+</h2>
+
+<p>
+Interested in AI Engineering, Machine Learning,
+Generative AI and Software Engineering opportunities.
+</p>
+
+<br>
+
+<a class="btn" href="mailto:manasdutt2003@gmail.com">
+Email Me →
+</a>
+
+<a class="btn alt"
+href="https://www.linkedin.com/in/manas-dutt-1bb42228/"
+target="_blank">
+LinkedIn ↗
+</a>
+
 </section>
 
-<footer>© 2026 Manas Dutt · Built with HTML & CSS</footer>
+
+<footer>
+© 2026 Manas Dutt · AI Engineer
+</footer>
 
 </body>
 </html>
