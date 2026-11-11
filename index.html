@@ -2,421 +2,755 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1.0">
-<title>Manas Dutt | AI Engineer</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Manas Dutt — Associate Technical Consultant, Perficient</title>
+<meta name="description" content="Manas Dutt — Associate Technical Consultant at Perficient. Data engineering, data quality, AI systems and agent engineering. Five capstone projects and open-source work.">
+<meta name="author" content="Manas Dutt">
+<meta name="theme-color" content="#075056">
 
-<style>
-*{margin:0;padding:0;box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{font-family:Arial,sans-serif;background:#08090c;color:#f5f5f5;line-height:1.6}
-a{text-decoration:none;color:inherit}
-span,label,header small,article small{color:#a78bfa}
+<meta property="og:type" content="website">
+<meta property="og:title" content="Manas Dutt — Associate Technical Consultant, Perficient">
+<meta property="og:description" content="Data engineering, data quality and AI systems. Five capstone projects built at the Perficient Global AI First Academy, plus open-source AI/ML work.">
 
-nav{
-height:70px;padding:0 7%;position:fixed;top:0;width:100%;
-display:flex;align-items:center;justify-content:space-between;
-background:#08090cee;backdrop-filter:blur(12px);
-border-bottom:1px solid #ffffff12;z-index:10
-}
-nav b{font-size:23px}
-nav div{display:flex;gap:25px;color:#aaa;font-size:14px}
-nav a:hover{color:#fff}
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-header,section{max-width:1100px;margin:auto;padding:110px 5%}
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='18' fill='%23075056'/><text x='50' y='71' font-family='Arial Narrow,Arial' font-weight='bold' font-size='58' fill='%235FD6C8' text-anchor='middle'>M</text></svg>">
 
-header{
-min-height:100vh;display:flex;flex-direction:column;
-justify-content:center
-}
-
-header h1{
-font-size:clamp(45px,7vw,75px);
-line-height:1.05;max-width:850px;margin:20px 0;
-letter-spacing:-3px
-}
-
-header p{
-max-width:650px;color:#999;font-size:17px;
-margin-bottom:30px
-}
-
-.btn{
-display:inline-block;background:#fff;color:#08090c;
-padding:12px 18px;border-radius:7px;margin:5px;
-font-size:14px;font-weight:bold
-}
-
-.btn.alt{
-background:transparent;color:#fff;
-border:1px solid #ffffff22
-}
-
-section{border-top:1px solid #ffffff0d}
-
-label{
-font-size:11px;letter-spacing:2px
-}
-
-h2{
-font-size:clamp(35px,5vw,55px);
-margin:15px 0 40px;line-height:1.1
-}
-
-section>p{
-color:#999;max-width:700px;font-size:16px
-}
-
-.skills,.projects{
-display:grid;grid-template-columns:repeat(2,1fr);gap:18px
-}
-
-.skills article,.projects article{
-background:#0e1015;border:1px solid #ffffff10;
-border-radius:14px;padding:25px;transition:.25s
-}
-
-.skills article:hover,.projects article:hover{
-transform:translateY(-5px);
-border-color:#a78bfa55
-}
-
-h3{font-size:21px;margin:10px 0}
-
-.skills p,.projects p{
-color:#999;font-size:14px
-}
-
-.projects article{
-min-height:280px;
-display:flex;
-flex-direction:column
-}
-
-.projects article em{
-font-style:normal;color:#aaa;
-font-size:11px;margin:20px 0
-}
-
-.projects article a{
-margin-top:auto;color:#a78bfa;font-size:13px
-}
-
-.projects article small{
-letter-spacing:1px
-}
-
-.contact{
-text-align:left
-}
-
-footer{
-text-align:center;padding:30px;color:#777;
-border-top:1px solid #ffffff10;font-size:12px
-}
-
-@media(max-width:700px){
-nav div{display:none}
-nav{padding:0 6%}
-header,section{padding:90px 6%}
-header h1{font-size:45px;letter-spacing:-2px}
-.skills,.projects{grid-template-columns:1fr}
-}
-</style>
+<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<!-- NAVIGATION -->
-<nav>
-<b>Manas<span>.</span></b>
+<!-- ====================== NAV ====================== -->
+<nav class="nav">
+  <div class="wrap">
+    <a href="#top" class="brand">
+      <svg class="mark" viewBox="0 0 100 100" aria-hidden="true">
+        <rect width="100" height="100" rx="24" fill="#5FD6C8"/>
+        <path d="M24 74V26h13l13 22 13-22h13v48H63V48L50 70 37 48v26z" fill="#02262A"/>
+      </svg>
+      <span class="word">Manas<em>.</em></span>
+    </a>
 
-<div>
-<a href="#about">About</a>
-<a href="#skills">Skills</a>
-<a href="#projects">Projects</a>
-<a href="#contact">Contact</a>
-</div>
+    <div class="nav-links">
+      <a href="#about">About</a>
+      <a href="#capstones">Capstones</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#credentials">Credentials</a>
+      <a href="#contact">Contact</a>
+    </div>
 
-<a href="https://github.com/manasdutt2003" target="_blank">GitHub ↗</a>
+    <a class="nav-cta" href="https://github.com/manasdutt2003" target="_blank" rel="noopener">GitHub &#8599;</a>
+  </div>
 </nav>
 
+<!-- ====================== HERO ====================== -->
+<header class="hero" id="top">
+  <div class="chev chev-a"></div>
+  <div class="chev chev-b"></div>
+  <div class="chev chev-c"></div>
 
-<!-- HERO -->
-<header>
-<small>AI ENGINEER • ML • GENAI • FULL STACK</small>
+  <div class="wrap">
+    <div class="hero-grid">
 
-<h1>
-Building intelligent <span>systems</span>
-that solve real problems.
-</h1>
+      <div>
+        <div class="status rise d1">
+          <i class="dot"></i> Associate Technical Consultant &#183; Perficient
+        </div>
 
-<p>
-I'm Manas Dutt, a Computer Science graduate focused on
-Machine Learning, Deep Learning, Generative AI, RAG and
-full-stack AI applications.
-</p>
+        <h1 class="rise d2">
+          Manas
+          <span class="l2">Dutt</span>
+        </h1>
 
-<div>
-<a class="btn" href="#projects">View Projects →</a>
-<a class="btn alt" href="https://github.com/manasdutt2003" target="_blank">
-GitHub ↗
-</a>
-</div>
+        <p class="hero-role rise d3">
+          Data &amp; AI Engineering
+          <span class="sep">&#183;</span>
+          <span class="org">Perficient</span>
+          <span class="sep">&#183;</span>
+          Chennai, India
+        </p>
+
+        <p class="hero-copy rise d4">
+          I build data systems that people can actually defend in a room &mdash; pipelines where
+          every row is accounted for, every number traces back to a source, and the whole thing
+          rebuilds from one command. Lately that work has run from hospital billing engines and
+          healthcare reconciliation to multi-agent AI development workflows.
+        </p>
+
+        <div class="btn-row rise d5">
+          <a class="btn btn-primary" href="#capstones">View Capstones <span class="ar">&#8594;</span></a>
+          <a class="btn btn-ghost" href="assets/Manas_Dutt_Resume.pdf" target="_blank" rel="noopener">Download Resume <span class="ar">&#8595;</span></a>
+          <a class="btn btn-ghost" href="https://github.com/manasdutt2003" target="_blank" rel="noopener">GitHub <span class="ar">&#8599;</span></a>
+        </div>
+      </div>
+
+      <div class="portrait rise d3">
+        <div class="portrait-frame">
+          <img src="assets/profile-photo.webp" alt="Manas Dutt" width="620" height="620">
+        </div>
+        <div class="portrait-tag">AI First Academy &#183; 2026</div>
+      </div>
+
+    </div>
+
+    <div class="stat-strip rise d6">
+      <div class="stat"><b>5</b><span>Capstone projects</span></div>
+      <div class="stat"><b>1,100+</b><span>Files shipped</span></div>
+      <div class="stat"><b>900+</b><span>Automated tests</span></div>
+      <div class="stat"><b>$6.07M</b><span>Reconciled to the cent</span></div>
+    </div>
+  </div>
 </header>
 
-
-<!-- ABOUT -->
+<!-- ====================== ABOUT ====================== -->
 <section id="about">
+  <div class="wrap">
+    <span class="eyebrow">01 &#8212; About</span>
+    <h2 class="section-title">Engineer for data<br>you can <em>defend</em>.</h2>
 
-<label>01 / ABOUT</label>
+    <div class="about-grid" style="margin-top:46px">
+      <div class="about-copy">
+        <p>
+          I'm <strong>Manas Dutt</strong>, an <span class="hl">Associate Technical Consultant at Perficient</span>,
+          based in Chennai. My work sits where data engineering meets AI: cleaning and reconciling
+          messy real-world data, then building the systems and agents that keep it honest.
+        </p>
+        <p>
+          Over five intensive weeks at the <strong>Perficient Global AI First Academy</strong> I shipped five
+          production-shaped capstones &mdash; an object-oriented hospital management system, a 179-task
+          Pandas analytics engine, a data-trust pipeline for a grocery delivery business, a healthcare
+          finance reconciliation and audit pack, and a ledger-first cleaning tool built by two
+          AI agents that check each other.
+        </p>
+        <p>
+          A thread runs through all of them: <strong>nothing disappears quietly</strong>. Every excluded row is
+          counted and explained, every output is hashed, every figure is traceable back to a received
+          record, and every pipeline reruns to the same answer. When something doesn't hold up, the
+          scorecard says so rather than hiding it.
+        </p>
+        <p>
+          Before Perficient I studied Computer Science at <strong>VIT Chennai</strong>, built backend
+          systems as a Software Engineering Intern at Hetu Labs, and ran faculty-mentored computer-vision
+          research on deepfake detection. Alongside that I work on applied AI &mdash; multimodal LLMs,
+          RAG and vector search, and vision models &mdash; from a shadow-removal network that improved
+          on DESDNet by 18% IoU to a Gemini-powered invoice analyzer.
+        </p>
+      </div>
 
-<h2>
-Engineer focused on <span>intelligent systems.</span>
-</h2>
-
-<p>
-I build practical AI systems across machine learning,
-deep learning, computer vision, Generative AI, RAG and
-application development. I enjoy taking an idea from
-data and model development all the way to a usable
-application.
-</p>
-
+      <dl class="facts">
+        <div class="fact"><dt>Role</dt><dd>Associate Technical Consultant</dd></div>
+        <div class="fact"><dt>Company</dt><dd>Perficient</dd></div>
+        <div class="fact"><dt>Based in</dt><dd>Chennai, India</dd></div>
+        <div class="fact"><dt>Program</dt><dd>Global AI First Academy<br>GGTP&nbsp;CHN&nbsp;DP&nbsp;SEP&nbsp;26</dd></div>
+        <div class="fact"><dt>Education</dt><dd>B.Tech CSE, VIT Chennai<br>CGPA 8.74 / 10</dd></div>
+        <div class="fact"><dt>Focus</dt><dd>Data Engineering &#183; Data Quality<br>AI &amp; Agent Systems</dd></div>
+        <div class="fact"><dt>Core stack</dt><dd>Python &#183; SQL &#183; Pandas<br>DuckDB &#183; Databricks &#183; PyTorch</dd></div>
+        <div class="fact"><dt>GitHub</dt><dd><a href="https://github.com/manasdutt2003" target="_blank" rel="noopener">@manasdutt2003 &#8599;</a></dd></div>
+        <div class="fact"><dt>Email</dt><dd><a href="mailto:manasdutt2003@gmail.com">manasdutt2003@gmail.com</a></dd></div>
+      </dl>
+    </div>
+  </div>
 </section>
 
+<!-- ====================== CAPSTONES ====================== -->
+<section id="capstones">
+  <div class="wrap">
+    <span class="eyebrow">02 &#8212; Capstone Program</span>
 
-<!-- SKILLS -->
-<section id="skills">
+    <div class="program-head">
+      <div>
+        <h2 class="section-title">Five weeks.<br>Five <em>shipped</em> systems.</h2>
+        <p class="section-lede">
+          The individual capstone track at the Perficient Global AI First Academy. Each week was a
+          complete delivery &mdash; brief, plan, code, tests, documentation and a stakeholder-ready
+          readout. The numbers below are taken straight from each project's verified output.
+        </p>
+      </div>
+      <span class="badge-internal">&#128274; Internal repository &#183; Perficient-Corporate</span>
+    </div>
 
-<label>02 / SKILLS</label>
+    <div class="timeline">
 
-<h2>
-Technical <span>Toolkit</span>
-</h2>
+      <!-- ---------- WEEK 1 ---------- -->
+      <article class="cap">
+        <div class="numeral">01</div>
+        <div class="cap-top">
+          <span class="wk">Week 01</span>
+          <span class="domain">Python &#183; OOP &#183; Git</span>
+        </div>
+        <h3>CityCare Hospital Management System</h3>
+        <p class="sub">A menu-driven HMS in pure Python &mdash; no third-party libraries, no shortcuts.</p>
+        <p>
+          A full hospital operations system for CityCare: patients, doctors, nurses, wards,
+          appointments, prescriptions, billing and ambulances, modelled as a proper class hierarchy
+          with encapsulation, inheritance, polymorphism and abstract billing contracts. Delivered as
+          three tagged releases planned across milestones and sprints, exactly as a client engagement
+          would be run.
+        </p>
 
-<div class="skills">
+        <div class="metrics">
+          <div class="metric"><b>3</b><span>Tagged releases</span></div>
+          <div class="metric"><b>7</b><span>Core modules M1&#8211;M7</span></div>
+          <div class="metric"><b>20</b><span>Advanced scenarios</span></div>
+          <div class="metric"><b>0</b><span>External dependencies</span></div>
+        </div>
 
-<article>
-<h3>AI / Machine Learning</h3>
-<p>
-Python · PyTorch · TensorFlow · Scikit-learn ·
-Pandas · NumPy · Keras
-</p>
-</article>
+        <ul class="highlights">
+          <li><b>Release 1</b> &mdash; entities, data protection via private attributes, multilevel inheritance with <code>super()</code>, a <code>Billable</code> ABC contract and a custom exception hierarchy.</li>
+          <li><b>Release 2</b> &mdash; ten advanced scenarios: OPD&#8594;IPD status by composition, ward transfer with per-ward charging, insurance payment strategies and doctor-leave rescheduling.</li>
+          <li><b>Release 3</b> &mdash; ten further features plus a full <code>unittest</code> suite and seeded CityCare sample data.</li>
+          <li>Milestones, sprint notes and a changelog kept alongside the code &mdash; the delivery is as documented as the system.</li>
+        </ul>
 
-<article>
-<h3>Generative AI</h3>
-<p>
-LLMs · RAG · LangChain · Embeddings · Vector DB ·
-Gemini · Llama
-</p>
-</article>
+        <div class="cap-foot">
+          <div class="stack">
+            <span class="chip">Python 3.10+</span>
+            <span class="chip">OOP</span>
+            <span class="chip">abc / ABC</span>
+            <span class="chip">unittest</span>
+            <span class="chip">Git &amp; tagging</span>
+            <span class="chip">Standard library only</span>
+          </div>
+          <a class="repo-link" href="https://github.com/Perficient-Corporate/GGTP_CHN_DP_SEP_26/tree/main/Projects/Individual/Manas%20Dutt/Week%201/Capstone_1" target="_blank" rel="noopener">
+            <svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
+            View repository
+          </a>
+        </div>
+      </article>
 
-<article>
-<h3>Development</h3>
-<p>
-FastAPI · React · Node.js · Express · JavaScript ·
-HTML · CSS · Tailwind
-</p>
-</article>
+      <!-- ---------- WEEK 2 ---------- -->
+      <article class="cap">
+        <div class="numeral">02</div>
+        <div class="cap-top">
+          <span class="wk">Week 02</span>
+          <span class="domain">Pandas &#183; Analytics &#183; Visualization</span>
+        </div>
+        <h3>Banking Records Analysis Engine</h3>
+        <p class="sub">179 analytical tasks over 13,000 messy banking transactions.</p>
+        <p>
+          An end-to-end Pandas capstone on real-shaped banking data: currency columns arriving as
+          <code>&#8364;1,234.5</code>, <code>INR 200</code> and <code>$10k</code>; dates in four
+          incompatible formats; categoricals spelled five different ways. Every one of the 179 tasks
+          is answered in code, with results captured to a reproducible output log.
+        </p>
 
-<article>
-<h3>Data & Cloud</h3>
-<p>
-MySQL · MongoDB · Cassandra · AWS · CUDA ·
-Git · GitHub · SQL
-</p>
-</article>
+        <div class="metrics">
+          <div class="metric"><b>179</b><span>Tasks answered</span></div>
+          <div class="metric"><b>13,002</b><span>Rows &#215; 41 columns</span></div>
+          <div class="metric"><b>25</b><span>Charts &amp; dashboards</span></div>
+          <div class="metric"><b>1,609</b><span>Lines of verified output</span></div>
+        </div>
 
-</div>
+        <ul class="highlights">
+          <li><b>Sprint 1 (Q1&#8211;Q60)</b> &mdash; missing values, duplicates, type conversion, standardization, filtering and group aggregations.</li>
+          <li><b>Sprint 2 (Q61&#8211;Q120)</b> &mdash; <code>loc</code>/<code>iloc</code>, pagination, all four join types, multi-key merges against 3,000 loan records, ranking, cumulative calculations and performance optimization.</li>
+          <li><b>Sprint 3 (Q121&#8211;Q179)</b> &mdash; data-quality scoring, audit tables, constraint validation, customer-lifetime-value analysis and a 2&#215;3 investment dashboard.</li>
+          <li>Custom <code>to_num()</code> and <code>to_date()</code> parsers; raw and aggregated frames kept separate, with row-count validation after every cleaning step.</li>
+        </ul>
+
+        <div class="cap-foot">
+          <div class="stack">
+            <span class="chip">Pandas</span>
+            <span class="chip">NumPy</span>
+            <span class="chip">Matplotlib</span>
+            <span class="chip">openpyxl</span>
+            <span class="chip">Data governance</span>
+            <span class="chip">CLV analytics</span>
+          </div>
+          <a class="repo-link" href="https://github.com/Perficient-Corporate/GGTP_CHN_DP_SEP_26/tree/main/Projects/Individual/Manas%20Dutt/Week%202/Capstone_2" target="_blank" rel="noopener">
+            <svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
+            View repository
+          </a>
+        </div>
+      </article>
+
+      <!-- ---------- WEEK 3 ---------- -->
+      <article class="cap">
+        <div class="numeral">03</div>
+        <div class="cap-top">
+          <span class="wk">Week 03</span>
+          <span class="domain">Data Trust &#183; SQL &#183; LLM Insights</span>
+        </div>
+        <h3>QuickMart Data Trust Pipeline</h3>
+        <p class="sub">Three messy extracts, no clean version of the truth &mdash; and numbers the room won't argue with.</p>
+        <p>
+          A grocery delivery business across four cities had three unreconciled systems and a
+          leadership deck due Monday. This pipeline takes the files exactly as received and produces
+          figures that tie every way they are cut &mdash; with every excluded, changed or questioned
+          order counted, explained and traceable back to a received row. Same files in, same answer
+          out, every time.
+        </p>
+
+        <div class="metrics">
+          <div class="metric"><b>6,103</b><span>Raw orders ingested</span></div>
+          <div class="metric"><b>398</b><span>Tests passing</span></div>
+          <div class="metric"><b>&#8377;7,756</b><span>Commission leakage found</span></div>
+          <div class="metric"><b>&#8377;2.31M</b><span>Delivered sales, reconciled</span></div>
+        </div>
+
+        <ul class="highlights">
+          <li><b>Deduplication that doesn't destroy evidence</b> &mdash; whole-row copies, conflicting repeats, same-person customers and product repeats separated into four classes, applied in a defended order so genuine repeat purchases survive.</li>
+          <li><b>12 validation rules (R01&#8211;R12)</b> across customer, product, price, date, quantity and status, with strict and lenient populations compared and the delta defended row by row.</li>
+          <li><b>SQL &#8596; Python parity tests</b> &mdash; 96 SQL question files and the Python pipeline must agree, or the build fails.</li>
+          <li><b>LLM insights, verified not trusted</b> &mdash; leadership prose drafted from aggregated mart JSON at temperature 0 / seed 42, then every drafted figure checked against a mart. The test suite plants a fake &#8377;9,999,999.99 and the verifier catches it.</li>
+          <li><b>An honest scorecard</b> &mdash; 23 acceptance criteria verified live: 20 PASS, 2 PARTIAL, 1 FAIL, with what isn't done named explicitly rather than glossed over.</li>
+        </ul>
+
+        <div class="cap-foot">
+          <div class="stack">
+            <span class="chip">Python</span>
+            <span class="chip">SQL</span>
+            <span class="chip">pytest</span>
+            <span class="chip">ruff + mypy</span>
+            <span class="chip">sqlfluff</span>
+            <span class="chip">LLM verification</span>
+            <span class="chip">Offline dashboard</span>
+          </div>
+          <a class="repo-link" href="https://github.com/Perficient-Corporate/GGTP_CHN_DP_SEP_26/tree/main/Projects/Individual/Manas%20Dutt/Week%203/Capstone_3" target="_blank" rel="noopener">
+            <svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
+            View repository
+          </a>
+        </div>
+      </article>
+
+      <!-- ---------- WEEK 4 ---------- -->
+      <article class="cap">
+        <div class="numeral">04</div>
+        <div class="cap-top">
+          <span class="wk">Week 04</span>
+          <span class="domain">Healthcare &#183; Finance Recon &#183; Audit</span>
+        </div>
+        <h3>CloneStream Healthcare Data Crisis</h3>
+        <p class="sub">Finance deadline Wednesday 5PM. Auditors on-site Friday. One command rebuilds everything in 18 seconds.</p>
+        <p>
+          A hospital network found integrity problems across claims, visits and medical records, with
+          an unexplained revenue gap and auditors arriving. This repository finds what broke, cleans
+          the data, reconciles the money, plans the fix and packages the evidence &mdash; all as code,
+          versioned, tested and reproducible. Delivered across five sprints, each on its own branch
+          and tag.
+        </p>
+
+        <div class="metrics">
+          <div class="metric"><b>$6.07M</b><span>Ties to the cent</span></div>
+          <div class="metric"><b>441</b><span>DQ rules run</span></div>
+          <div class="metric"><b>349</b><span>Tests</span></div>
+          <div class="metric"><b>18s</b><span>Full rebuild</span></div>
+        </div>
+
+        <ul class="highlights">
+          <li><b>Every claim dollar sits in exactly one bucket</b> &mdash; paid $1.95M, adjustments $0.64M, denied $1.12M, under appeal $0.16M, pipeline $2.23M. They reconcile to $6,066,812.08 exactly, and the build fails if they don't.</li>
+          <li><b>Certain and estimated figures are never blended</b> &mdash; $1,945,489 paid (certain) is reported separately from $1.17M expected recovery (range $1.04M&#8211;$1.30M).</li>
+          <li><b>The courage to say "not determinable"</b> &mdash; the claim&#8594;bill link points at the wrong patient on 250 of 250 claims, so the over-charging question is declared unanswerable rather than answered precisely and wrongly.</li>
+          <li><b>Root cause, not symptoms</b> &mdash; 14 hypotheses tested; the failure rate is statistically flat across all seven years (p = 0.96), proving a design gap rather than a recent incident.</li>
+          <li><b>Audit-ready by construction</b> &mdash; 49 ingest validators, per-run logs, a SHA-256 fingerprint on every output, and <code>make verify</code> failing if a single file was edited.</li>
+          <li>Also ships: Slack threshold alerts, a scheduled Databricks job, a Power BI build guide, and memos for Finance, Compliance and Patient Care.</li>
+        </ul>
+
+        <div class="cap-foot">
+          <div class="stack">
+            <span class="chip">Python</span>
+            <span class="chip">DuckDB</span>
+            <span class="chip">SQL</span>
+            <span class="chip">pytest</span>
+            <span class="chip">Databricks</span>
+            <span class="chip">Power BI</span>
+            <span class="chip">GitHub Actions</span>
+            <span class="chip">SHA-256 audit trail</span>
+          </div>
+          <a class="repo-link" href="https://github.com/Perficient-Corporate/GGTP_CHN_DP_SEP_26/tree/main/Projects/Individual/Manas%20Dutt/Week%204/Capstone_4" target="_blank" rel="noopener">
+            <svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
+            View repository
+          </a>
+        </div>
+      </article>
+
+      <!-- ---------- WEEK 5 ---------- -->
+      <article class="cap">
+        <div class="numeral">05</div>
+        <div class="cap-top">
+          <span class="wk">Week 05</span>
+          <span class="domain">AI Agents &#183; MCP &#183; Claude Code</span>
+        </div>
+        <h3>Sales Sentinel &amp; Agent Engineering</h3>
+        <p class="sub">Two AI agents that check each other, with a hook-enforced boundary between them.</p>
+        <p>
+          A three-day arc through AI-assisted engineering: structured LLM extraction, then a
+          Claude Code sandbox with custom instructions, hooks and an MCP server, then a real product &mdash;
+          <strong>Sales Sentinel</strong>, a ledger-first cleaning pipeline for daily retail sales CSVs
+          that replaces a two-hour manual job with one command, built and maintained by a
+          <strong>coder agent</strong> and a <strong>tester agent</strong> that are structurally
+          prevented from doing each other's job.
+        </p>
+
+        <div class="metrics">
+          <div class="metric"><b>180</b><span>Tests &#183; 95% branch</span></div>
+          <div class="metric"><b>47/47</b><span>Spec rules covered</span></div>
+          <div class="metric"><b>90.4%</b><span>Mutants killed</span></div>
+          <div class="metric"><b>26/26</b><span>Boundary cases held</span></div>
+        </div>
+
+        <ul class="highlights">
+          <li><b>Every input row gets exactly one fate</b> &mdash; recorded in <code>row_ledger.csv</code>. Rows <em>and</em> money must reconcile or the run fails. Nothing is silently dropped by a <code>dropna()</code>.</li>
+          <li><b>Content-replay detection</b> &mdash; deduping on ID finds zero duplicates here; replay detection finds 70, reported as bursts with their revenue impact and a switchable policy.</li>
+          <li><b>Hook-enforced agent boundary</b> &mdash; the tester writes tests from the spec and can never touch <code>src/</code>; the coder writes code and can never touch <code>tests/</code>. Ask the coder to "just fix the failing test" and the guard denies it and logs the attempt.</li>
+          <li><b>A local MCP server</b> gives both agents real data-quality tools, plus a domain skill the agents load automatically.</li>
+          <li><code>Decimal</code> money with half-up rounding, hierarchical median imputation after dedupe, four DAMA quality dimensions, and exit codes 0/1/2/3 for schedulers.</li>
+          <li><b>Days 1&#8211;2</b> &mdash; a hardened invoice-extraction prompt that returns parse-safe JSON every run, and a sandbox exploring <code>CLAUDE.md</code>, hook exit-code semantics and a FastMCP text-tools server.</li>
+        </ul>
+
+        <div class="cap-foot">
+          <div class="stack">
+            <span class="chip">Claude Code</span>
+            <span class="chip">MCP / FastMCP</span>
+            <span class="chip">Agent hooks</span>
+            <span class="chip">Python 3.11+</span>
+            <span class="chip">pytest + hypothesis</span>
+            <span class="chip">Mutation testing</span>
+            <span class="chip">Anthropic API</span>
+          </div>
+          <a class="repo-link" href="https://github.com/Perficient-Corporate/GGTP_CHN_DP_SEP_26/tree/main/Projects/Individual/Manas%20Dutt/Week%205/Capstone_5" target="_blank" rel="noopener">
+            <svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
+            View repository
+          </a>
+        </div>
+      </article>
+
+    </div>
+  </div>
 </section>
 
-
-<!-- PROJECTS -->
+<!-- ====================== PROJECTS ====================== -->
 <section id="projects">
+  <div class="wrap">
+    <span class="eyebrow">03 &#8212; Open Source</span>
+    <h2 class="section-title">Applied AI, <em>in public</em>.</h2>
+    <p class="section-lede">
+      Independent work on GitHub &mdash; computer vision, generative AI, RAG systems and full-stack
+      applications. Every card links to its repository.
+    </p>
 
-<label>03 / PROJECTS</label>
+    <div class="proj-grid">
 
-<h2>
-Selected <span>Work</span>
-</h2>
+      <article class="proj">
+        <span class="tag">Computer Vision</span>
+        <h3>Shadow Detection &amp; Removal</h3>
+        <p>Improved on DESDNet by <b>18% IoU</b> for detecting and removing shadows, with inference optimized across 10,000+ satellite images.</p>
+        <div class="stack"><span class="chip">PyTorch</span><span class="chip">OpenCV</span><span class="chip">DESDNet</span></div>
+        <a class="go" href="https://github.com/manasdutt2003/Shadow_detection_and_removal" target="_blank" rel="noopener">View repository <span class="ar">&#8594;</span></a>
+      </article>
 
-<div class="projects">
+      <article class="proj">
+        <span class="tag">Machine Learning &#183; Live</span>
+        <h3>Learning Style Identification</h3>
+        <p>Predicts a learner's style from <b>18 behavioural features</b> using KAN, TabNet, SS-VAE and CatBoost, with Gemini turning each profile into a personalised study plan.</p>
+        <div class="stack"><span class="chip">CatBoost</span><span class="chip">TabNet</span><span class="chip">SS-VAE</span><span class="chip">Streamlit</span></div>
+        <a class="go live" href="https://learning-style-identification-using-semi-supervised-learning-6.streamlit.app/" target="_blank" rel="noopener">Open live demo <span class="ar">&#8599;</span></a>
+      </article>
 
+      <article class="proj">
+        <span class="tag">Deep Learning</span>
+        <h3>Deepfake Detection</h3>
+        <p>A CNN-based deepfake detection system covering preprocessing, training and evaluation &mdash; built as faculty-mentored research at VIT Chennai.</p>
+        <div class="stack"><span class="chip">PyTorch</span><span class="chip">OpenCV</span><span class="chip">CNN</span></div>
+        <a class="go" href="https://github.com/manasdutt2003/Deepfake-Detection-Model" target="_blank" rel="noopener">View repository <span class="ar">&#8594;</span></a>
+      </article>
 
-<article>
+      <article class="proj">
+        <span class="tag">RAG</span>
+        <h3>PDF Query Engine</h3>
+        <p>Ask questions of any PDF. Documents are chunked, embedded and indexed in Cassandra, then retrieved through LangChain for grounded answers.</p>
+        <div class="stack"><span class="chip">LangChain</span><span class="chip">Cassandra</span><span class="chip">Embeddings</span></div>
+        <a class="go" href="https://github.com/manasdutt2003/PDF_Query_using_LangChain_and_Cassandra" target="_blank" rel="noopener">View repository <span class="ar">&#8594;</span></a>
+      </article>
 
-<small>COMPUTER VISION</small>
+      <article class="proj">
+        <span class="tag">Generative AI</span>
+        <h3>Q&amp;A Chatbot</h3>
+        <p>A conversational question-answering application over modern LLMs, with prompt handling and response streaming built from the ground up.</p>
+        <div class="stack"><span class="chip">Python</span><span class="chip">LangChain</span><span class="chip">LLM</span></div>
+        <a class="go" href="https://github.com/manasdutt2003/Q-A_ChatBot" target="_blank" rel="noopener">View repository <span class="ar">&#8594;</span></a>
+      </article>
 
-<h3>Shadow Detection & Removal</h3>
+      <article class="proj">
+        <span class="tag">Vector Search</span>
+        <h3>Semantic Document Search</h3>
+        <p>A full RAG pipeline &mdash; document chunking, sentence-transformer embeddings, Pinecone vector retrieval and LLM generation &mdash; for natural-language Q&amp;A over unstructured documents.</p>
+        <div class="stack"><span class="chip">Pinecone</span><span class="chip">LangChain</span><span class="chip">Gemini</span></div>
+        <a class="go" href="https://github.com/manasdutt2003/QuerySearch_Using_PineConeDB_and_LangChain" target="_blank" rel="noopener">View repository <span class="ar">&#8594;</span></a>
+      </article>
 
-<p>
-Deep learning system for detecting and removing
-shadows using PyTorch, attention mechanisms and
-ResNeXt.
-</p>
+      <article class="proj">
+        <span class="tag">Document AI</span>
+        <h3>Invoice Intelligence Extractor</h3>
+        <p>A multimodal invoice analyzer on <b>Gemini 2.5 Flash</b> &mdash; image-based Q&amp;A plus structured JSON extraction of invoice number, date, vendor, total and tax.</p>
+        <div class="stack"><span class="chip">Gemini 2.5 Flash</span><span class="chip">Streamlit</span><span class="chip">Multimodal</span></div>
+        <a class="go" href="https://github.com/manasdutt2003/InvoiceExtractor" target="_blank" rel="noopener">View repository <span class="ar">&#8594;</span></a>
+      </article>
 
-<em>
-PyTorch · ResNeXt · Computer Vision
-</em>
+      <article class="proj">
+        <span class="tag">Generative AI</span>
+        <h3>Blog Generation with Llama</h3>
+        <p>Long-form content generation driven by Llama through LangChain, with controllable tone, audience and length parameters.</p>
+        <div class="stack"><span class="chip">Llama</span><span class="chip">LangChain</span><span class="chip">Python</span></div>
+        <a class="go" href="https://github.com/manasdutt2003/BlogGeneration_using_Llama_and_Langchain" target="_blank" rel="noopener">View repository <span class="ar">&#8594;</span></a>
+      </article>
 
-<a href="https://github.com/manasdutt2003/Shadow_detection_and_removal"
-target="_blank">
-GitHub →
-</a>
+      <article class="proj">
+        <span class="tag">Full Stack</span>
+        <h3>MSME Invest Connect</h3>
+        <p>A full-stack investment platform connecting MSMEs with investors, built on JWT-authenticated REST APIs with optimized MongoDB queries.</p>
+        <div class="stack"><span class="chip">React</span><span class="chip">Node.js</span><span class="chip">Express.js</span><span class="chip">MongoDB</span></div>
+        <a class="go" href="https://github.com/manasdutt2003/msme-invest-connect" target="_blank" rel="noopener">View repository <span class="ar">&#8594;</span></a>
+      </article>
 
-</article>
+      <article class="proj">
+        <span class="tag">Full Stack</span>
+        <h3>Unified Workspace</h3>
+        <p>A single workspace that brings scattered productivity tools into one interface with a shared data model.</p>
+        <div class="stack"><span class="chip">JavaScript</span><span class="chip">React</span><span class="chip">Node.js</span></div>
+        <a class="go" href="https://github.com/manasdutt2003/unified-workspace" target="_blank" rel="noopener">View repository <span class="ar">&#8594;</span></a>
+      </article>
 
+      <article class="proj">
+        <span class="tag">Web App</span>
+        <h3>FinanceOwl</h3>
+        <p>A personal finance tracker for budgets, spending patterns and category-level insight into where the money actually goes.</p>
+        <div class="stack"><span class="chip">JavaScript</span><span class="chip">Charts</span><span class="chip">Web</span></div>
+        <a class="go" href="https://github.com/manasdutt2003/FinanceOwl" target="_blank" rel="noopener">View repository <span class="ar">&#8594;</span></a>
+      </article>
 
-<article>
+      <article class="proj">
+        <span class="tag">Web App</span>
+        <h3>LeetMetric</h3>
+        <p>A TypeScript dashboard that visualises competitive-programming progress &mdash; solve rates, difficulty mix and streaks over time.</p>
+        <div class="stack"><span class="chip">TypeScript</span><span class="chip">REST API</span><span class="chip">Dataviz</span></div>
+        <a class="go" href="https://github.com/manasdutt2003/LeetMetric" target="_blank" rel="noopener">View repository <span class="ar">&#8594;</span></a>
+      </article>
 
-<small>MACHINE LEARNING</small>
+      <article class="proj">
+        <span class="tag">Web Platform</span>
+        <h3>Integrated Tracking &amp; Reporting</h3>
+        <p>A tracking and reporting system that consolidates activity data into consistent, shareable operational reports.</p>
+        <div class="stack"><span class="chip">HTML</span><span class="chip">CSS</span><span class="chip">JavaScript</span></div>
+        <a class="go" href="https://github.com/manasdutt2003/Integrated-Tracking-and-Reporting-System" target="_blank" rel="noopener">View repository <span class="ar">&#8594;</span></a>
+      </article>
 
-<h3>Learning Style Identification</h3>
+      <article class="proj">
+        <span class="tag">Web</span>
+        <h3>Developer Portfolio</h3>
+        <p>An earlier iteration of this site &mdash; a component-driven personal portfolio built in JavaScript with a reusable section system.</p>
+        <div class="stack"><span class="chip">JavaScript</span><span class="chip">React</span><span class="chip">CSS</span></div>
+        <a class="go" href="https://github.com/manasdutt2003/developer-portfolio" target="_blank" rel="noopener">View repository <span class="ar">&#8594;</span></a>
+      </article>
 
-<p>
-AI-powered learning style prediction using KAN,
-TabNet, SS-VAE, CatBoost and Gemini.
-</p>
+      <article class="proj">
+        <span class="tag">More</span>
+        <h3>Everything Else</h3>
+        <p>Eighteen public repositories and counting &mdash; experiments, tooling and side projects across AI, data and the web.</p>
+        <div class="stack"><span class="chip">18 repositories</span><span class="chip">Python</span><span class="chip">TypeScript</span></div>
+        <a class="go" href="https://github.com/manasdutt2003?tab=repositories" target="_blank" rel="noopener">Browse all on GitHub <span class="ar">&#8599;</span></a>
+      </article>
 
-<em>
-CatBoost · TabNet · Gemini · Streamlit
-</em>
-
-<a href="https://learning-style-identification-using-semi-supervised-learning-6.streamlit.app/"
-target="_blank">
-Live Demo →
-</a>
-
-</article>
-
-
-<article>
-
-<small>GENERATIVE AI</small>
-
-<h3>AI Q&A Chatbot</h3>
-
-<p>
-LLM-based question answering application demonstrating
-modern Generative AI development.
-</p>
-
-<em>
-Python · LangChain · LLM · RAG
-</em>
-
-<a href="https://github.com/manasdutt2003/Q-A_ChatBot"
-target="_blank">
-GitHub →
-</a>
-
-</article>
-
-
-<article>
-
-<small>RAG</small>
-
-<h3>PDF Query AI</h3>
-
-<p>
-Document question-answering system using retrieval,
-embeddings, LangChain and Cassandra.
-</p>
-
-<em>
-LangChain · Cassandra · RAG
-</em>
-
-<a href="https://github.com/manasdutt2003/PDF_Query_using_LangChain_and_Cassandra"
-target="_blank">
-GitHub →
-</a>
-
-</article>
-
-
-<article>
-
-<small>DEEP LEARNING</small>
-
-<h3>Deepfake Detection</h3>
-
-<p>
-Computer vision project focused on detecting
-manipulated media using deep learning.
-</p>
-
-<em>
-Python · PyTorch · ResNet · Computer Vision
-</em>
-
-<a href="https://github.com/manasdutt2003/Deepfake-Detection-Model"
-target="_blank">
-GitHub →
-</a>
-
-</article>
-
-
-<article>
-
-<small>AI APPLICATION</small>
-
-<h3>Invoice Extractor</h3>
-
-<p>
-AI application for extracting structured information
-from invoice documents.
-</p>
-
-<em>
-Python · AI · Document Processing
-</em>
-
-<a href="https://github.com/manasdutt2003/InvoiceExtractor"
-target="_blank">
-GitHub →
-</a>
-
-</article>
-
-</div>
+    </div>
+  </div>
 </section>
 
+<!-- ====================== SKILLS ====================== -->
+<section id="skills">
+  <div class="wrap">
+    <span class="eyebrow">04 &#8212; Capabilities</span>
+    <h2 class="section-title">Technical <em>toolkit</em>.</h2>
+    <p class="section-lede">Everything below has been used to ship something that runs, not just to pass a tutorial.</p>
 
-<!-- CONTACT -->
+    <div class="skill-grid">
+
+      <article class="skill">
+        <div class="ico"><svg viewBox="0 0 24 24"><ellipse cx="12" cy="5" rx="8" ry="3"/><path d="M4 5v14c0 1.7 3.6 3 8 3s8-1.3 8-3V5"/><path d="M4 12c0 1.7 3.6 3 8 3s8-1.3 8-3"/></svg></div>
+        <h3>Data Engineering</h3>
+        <ul>
+          <li>Python</li><li>SQL</li><li>Pandas</li><li>NumPy</li><li>DuckDB</li>
+          <li>PostgreSQL</li><li>Databricks</li><li>ETL design</li><li>Datamarts</li>
+        </ul>
+      </article>
+
+      <article class="skill">
+        <div class="ico"><svg viewBox="0 0 24 24"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg></div>
+        <h3>Data Quality</h3>
+        <ul>
+          <li>Rule engines</li><li>Deduplication</li><li>Reconciliation</li><li>DAMA dimensions</li>
+          <li>Lineage</li><li>Audit trails</li><li>SHA-256 verification</li><li>Governance</li>
+        </ul>
+      </article>
+
+      <article class="skill">
+        <div class="ico"><svg viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="2"/><path d="M9 9h6v6H9z"/><path d="M9 1v3M15 1v3M9 20v3M15 20v3M1 9h3M1 15h3M20 9h3M20 15h3"/></svg></div>
+        <h3>AI &amp; Machine Learning</h3>
+        <ul>
+          <li>PyTorch</li><li>TensorFlow</li><li>scikit-learn</li><li>CatBoost</li><li>TabNet</li>
+          <li>CNNs</li><li>OpenCV</li><li>SHAP</li><li>SMOTE</li><li>Semi-supervised</li><li>CUDA</li>
+        </ul>
+      </article>
+
+      <article class="skill">
+        <div class="ico"><svg viewBox="0 0 24 24"><path d="M12 2a4 4 0 0 1 4 4v2a4 4 0 0 1-8 0V6a4 4 0 0 1 4-4z"/><path d="M5 11v1a7 7 0 0 0 14 0v-1"/><path d="M12 19v3"/></svg></div>
+        <h3>Generative AI</h3>
+        <ul>
+          <li>LLMs</li><li>RAG</li><li>LangChain</li><li>Anthropic API</li><li>Gemini</li><li>Llama 2</li>
+          <li>Embeddings</li><li>Pinecone</li><li>ChromaDB</li><li>Cassandra</li><li>Multimodal AI</li>
+          <li>Prompt engineering</li><li>Output verification</li>
+        </ul>
+      </article>
+
+      <article class="skill">
+        <div class="ico"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><circle cx="5" cy="5" r="2"/><circle cx="19" cy="5" r="2"/><circle cx="5" cy="19" r="2"/><circle cx="19" cy="19" r="2"/><path d="M7 7l3 3M17 7l-3 3M7 17l3-3M17 17l-3-3"/></svg></div>
+        <h3>Agent Engineering</h3>
+        <ul>
+          <li>Claude Code</li><li>MCP / FastMCP</li><li>Agent hooks</li><li>Multi-agent workflows</li>
+          <li>Skills</li><li>Spec-driven development</li><li>Guardrails</li>
+        </ul>
+      </article>
+
+      <article class="skill">
+        <div class="ico"><svg viewBox="0 0 24 24"><path d="M16 18l6-6-6-6M8 6l-6 6 6 6"/></svg></div>
+        <h3>Engineering Practice</h3>
+        <ul>
+          <li>pytest</li><li>hypothesis</li><li>Mutation testing</li><li>ruff</li><li>mypy</li>
+          <li>sqlfluff</li><li>pre-commit</li><li>GitHub Actions</li><li>Git flow &amp; tagging</li>
+        </ul>
+      </article>
+
+      <article class="skill">
+        <div class="ico"><svg viewBox="0 0 24 24"><path d="M3 3v18h18"/><path d="M7 15l4-5 3 3 5-7"/></svg></div>
+        <h3>Analytics &amp; BI</h3>
+        <ul>
+          <li>Matplotlib</li><li>Power BI</li><li>Dashboards</li><li>KPI design</li>
+          <li>Cohort analysis</li><li>CLV modelling</li><li>Executive reporting</li>
+        </ul>
+      </article>
+
+      <article class="skill">
+        <div class="ico"><svg viewBox="0 0 24 24"><path d="M4 4h16v12H4z"/><path d="M2 20h20"/><path d="M8 8h8M8 12h5"/></svg></div>
+        <h3>Application Development</h3>
+        <ul>
+          <li>Python</li><li>Java</li><li>C++</li><li>JavaScript</li><li>TypeScript</li>
+          <li>Flask</li><li>FastAPI</li><li>React</li><li>Node.js</li><li>Express.js</li>
+          <li>REST APIs</li><li>MySQL</li><li>MongoDB</li><li>Firebase</li>
+          <li>Docker</li><li>Azure</li><li>Linux</li>
+        </ul>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ====================== CREDENTIALS ====================== -->
+<section id="credentials">
+  <div class="wrap">
+    <span class="eyebrow">05 &#8212; Credentials</span>
+    <h2 class="section-title">Experience &amp; <em>education</em>.</h2>
+    <p class="section-lede">Where the practice was built.</p>
+
+    <div class="cred-grid">
+
+      <article class="cred">
+        <div class="when">Current</div>
+        <h3>Associate Technical Consultant</h3>
+        <div class="where">Perficient &#183; Chennai, India</div>
+        <p>
+          Building data and AI systems across client engagements &mdash; data engineering, data quality
+          and reconciliation, analytics and AI-assisted development workflows.
+        </p>
+      </article>
+
+      <article class="cred">
+        <div class="when">2026</div>
+        <h3>Global AI First Academy</h3>
+        <div class="where">Perficient &#183; GGTP CHN DP SEP 26</div>
+        <p>
+          An intensive data-platform and AI engineering program. Delivered five individual capstones
+          covering Python and OOP, Pandas analytics, data trust pipelines, healthcare finance
+          reconciliation, and multi-agent AI engineering.
+        </p>
+      </article>
+
+      <article class="cred">
+        <div class="when">May &#8211; Jul 2026</div>
+        <h3>Summer Research Intern &#183; SRIP</h3>
+        <div class="where">VIT Chennai</div>
+        <p>
+          Built a CNN-based deepfake detection system in PyTorch and OpenCV &mdash; preprocessing,
+          training and evaluation &mdash; as faculty-mentored computer-vision research, with
+          experimental findings documented.
+        </p>
+      </article>
+
+      <article class="cred">
+        <div class="when">May &#8211; Jul 2025</div>
+        <h3>Software Engineering Intern</h3>
+        <div class="where">Hetu Labs</div>
+        <p>
+          Engineered backend utilities that cut API response latency by <b>25%</b>, contributed to
+          scalable services and CI/CD workflows, and refactored utilities into modular, documented
+          components.
+        </p>
+      </article>
+
+      <article class="cred">
+        <div class="when">Education &#183; 2026</div>
+        <h3>B.Tech, Computer Science &amp; Engineering</h3>
+        <div class="where">Vellore Institute of Technology, Chennai &#183; CGPA 8.74 / 10</div>
+        <p>
+          Coursework and independent research across machine learning, deep learning, computer
+          vision and software engineering. Class XII (CBSE) 97% &#183; Class X (CBSE) 93.4%.
+        </p>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ====================== CONTACT ====================== -->
 <section id="contact" class="contact">
+  <div class="chev-d"></div>
+  <div class="wrap">
+    <span class="eyebrow">06 &#8212; Contact</span>
+    <h2 class="section-title">Let's build something<br><em>worth defending</em>.</h2>
+    <p class="section-lede">
+      Open to conversations about data engineering, data quality, AI systems and
+      agent-assisted development.
+    </p>
 
-<label>04 / CONTACT</label>
+    <div class="btn-row">
+      <a class="btn btn-primary" href="mailto:manasdutt2003@gmail.com">Email me <span class="ar">&#8594;</span></a>
+      <a class="btn btn-ghost" href="assets/Manas_Dutt_Resume.pdf" target="_blank" rel="noopener">Resume <span class="ar">&#8595;</span></a>
+    </div>
 
-<h2>
-Let's build something <span>intelligent.</span>
-</h2>
-
-<p>
-Interested in AI Engineering, Machine Learning,
-Generative AI and Software Engineering opportunities.
-</p>
-
-<br>
-
-<a class="btn" href="mailto:manasdutt2003@gmail.com">
-Email Me →
-</a>
-
-<a class="btn alt"
-href="https://www.linkedin.com/in/manas-dutt-1bb42228/"
-target="_blank">
-LinkedIn ↗
-</a>
-
+    <div class="links">
+      <a href="mailto:manasdutt2003@gmail.com">
+        <span>Email</span><b>manasdutt2003@gmail.com</b>
+      </a>
+      <a href="https://www.linkedin.com/in/manas-dutt-1bb42228b/" target="_blank" rel="noopener">
+        <span>LinkedIn</span><b>in/manas-dutt &#8599;</b>
+      </a>
+      <a href="https://github.com/manasdutt2003" target="_blank" rel="noopener">
+        <span>GitHub</span><b>@manasdutt2003 &#8599;</b>
+      </a>
+      <a href="#top">
+        <span>Location</span><b>Chennai, India</b>
+      </a>
+    </div>
+  </div>
 </section>
-
 
 <footer>
-© 2026 Manas Dutt · AI Engineer
+  <div class="wrap">
+    <p>&#169; 2026 Manas Dutt &#183; Associate Technical Consultant, Perficient &#183; Built with HTML &amp; CSS</p>
+    <a class="to-top" href="#top">Back to top <span>&#8593;</span></a>
+  </div>
 </footer>
 
 </body>
