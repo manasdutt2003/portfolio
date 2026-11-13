@@ -17,7 +17,7 @@ Portfolio Website/
 ├── index.html      # the whole site: nav, hero, about, 5 capstones, 15 projects, skills, credentials, contact
 ├── style.css       # design system + layout + responsive + print styles
 ├── netlify.toml    # publish config and security headers
-├── assets/         # profile-photo.jpg and Manas_Dutt_Resume.pdf go here
+├── assets/         # profile-photo.webp and Manas_Dutt_Resume.pdf
 └── README.md
 ```
 
@@ -60,16 +60,7 @@ npx netlify-cli deploy --prod --dir .
 - `Ctrl` + `P` produces a clean light-background PDF (print styles included).
 - Respects `prefers-reduced-motion`.
 
-## Swapping in the profile photo
+## Updating the photo or resume
 
-Drop the image at `assets/profile-photo.jpg`, then in `index.html` replace:
-
-```html
-<div class="monogram">MD</div>
-```
-
-with:
-
-```html
-<img src="assets/profile-photo.jpg" alt="Manas Dutt">
-```
+Replace `assets/profile-photo.webp` (square, about 620 px) or
+`assets/Manas_Dutt_Resume.pdf` with a file of the same name. No HTML changes are needed.
