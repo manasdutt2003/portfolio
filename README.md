@@ -33,9 +33,7 @@ Portfolio Website/
 
 ## Capstone links
 
-The five weekly capstones live in the **private** `Perficient-Corporate/GGTP_CHN_DP_SEP_26`
-repository, so those links open only for people signed in with Perficient org access.
-Cards are marked *Internal repository* to set that expectation.
+Each capstone card links to its public repository on GitHub (`capstone-hospital-management-system`, `capstone-banking-records-analysis`, `capstone-quickmart-data-trust`, `capstone-clonestream-healthcare`, `capstone-sales-sentinel`).
 
 ## Local preview
 
